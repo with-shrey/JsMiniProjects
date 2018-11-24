@@ -1,0 +1,646 @@
+
+     .head
+{
+  border-radius:1px;
+}
+.header1
+{
+background-color: rgb(47,79,79);
+padding:20px;
+
+}
+
+.head-cart
+{
+  padding:16px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.btn-check:hover
+{
+   color: black;
+   background-color: white;
+   transition: 1s;
+}
+.menu li
+{
+  font-family: gainsboro;
+}
+
+.lefter i
+{
+  color: lightblue;
+}
+.dollar
+{
+  width: 50px;
+  position: relative;
+}
+.dollar
+{
+  padding:15px;
+  background-color:black;
+  border-color: black;
+}
+.dollar i
+{
+  color: white;
+}
+.btn-En
+{
+  padding:15px;
+  background-color:black;
+  border-color: black;
+}
+.btn-En 
+{
+  color: white;
+}
+
+.dropdown
+{
+     position:relative;
+     display:inline-block;
+
+}
+.dropbtn
+{
+     
+     
+      padding:5px;
+      font-size:15px;
+      cursor:pointer;
+
+}  
+.dropdown-content
+{
+     background-color:white;
+     display:none;
+     position:absolute;
+     min-width:250px;
+ 
+     
+    
+     
+}
+
+.dropdown-content a
+{
+     color:black;
+     padding:5px;
+     display:block;
+     text-decoration:none;
+    font-size: 15px;
+    
+     
+}
+.dropdown-content a:hover
+ {
+    
+    background-color:rgb(175,238,238,0.2);
+   
+}
+
+.dropdown:hover .dropdown-content 
+
+{
+    display:block;
+    z-index: 50;
+}
+
+.back1
+{
+
+
+  background-image:url(check.jpg);
+  background-size: cover;
+    height: 50vh;
+    position: relative;
+    top:-20px;
+   
+    
+}
+
+@media (max-width: 600px)
+
+{
+  .back1{
+         height:65vh;
+  }
+}
+
+@media (max-width: 920px)
+
+{
+  .back1{
+         height:70vh;
+  }
+}
+
+
+
+.row2
+{
+  padding-top: 9%;
+}
+.input
+{
+   padding: 26px; 
+   border-radius: 1px;
+}
+.phone-num a
+{
+  color:white; font-size:19px;
+}
+.phone-num a:hover
+{
+  text-decoration: none;
+}
+.dial
+{
+  padding-left: 10%;
+}
+.call
+{
+  color: green;
+  font-size: 60px;
+  
+  
+}
+
+.number a
+{
+  font-size: 20px;
+  color: white;
+  }
+
+.icons i
+{
+  color: green;
+  font-size: 20px;
+}
+.icons b
+{
+  color:silver;
+  padding-left: 10px;
+}
+.icons a:hover
+{
+   text-decoration: none;
+}
+.cart i
+{
+  color: white;
+  font-size: 35px;
+  border: 1px solid green;
+  padding: 7px;
+  background-color: green;
+  position: relative;
+
+
+  
+}
+.cart button
+{
+  padding:12px;
+  position: relative;
+  float: right;
+  width: 150px;
+  border-radius: 1px;
+  background-color: rgb(0,0,0,0.6);
+  color: white;
+  border:1px solid rgb(0,0,0,0.6) ;
+}
+
+
+ 
+ .heading li  
+ {
+  
+  padding:10px;
+  text-align: center;
+  padding-left: 40px;
+   color: red;
+
+ }
+
+ .heading li:hover
+ {
+  border-bottom: 2px solid red;
+
+  transition: 0.1s
+  
+
+  }
+.inverse
+{
+    position: relative;
+    top:-20px;
+   border-radius: 1px; 
+   background-color: whitesmoke;
+}
+.sticky
+{
+
+    
+    position: sticky;
+    
+    z-index: 50;
+    top:-20px;
+}
+@media (max-width: 600px)
+{
+  .sticky{
+                top:0;
+  }
+}
+
+@media (max-width: 920px)
+{
+  .sticky{
+                top:0;
+  }
+}
+
+
+.toogle
+{
+   background-color: black;
+}
+
+
+
+
+
+.fifth-cont
+{
+	padding-top: 3%;
+}
+
+
+
+.cart p
+{
+	text-align: center;
+	font-size: 30px;
+	font-family: gainsboro;
+}
+
+.line1
+{
+	
+	height: 200px;
+}
+.product
+{
+	
+	height: 100px;
+	position: relative;
+	top:20px;
+}
+
+img
+{
+	float: left;
+}
+
+.product p
+
+{
+	text-align: center;
+	font-size: 15px;
+	padding-top: 35px;
+
+}
+
+.product p a
+{
+	color: black;
+}
+
+.product p a:hover
+{
+	text-decoration: none;
+}
+
+.form
+{
+	width: 100px;
+	padding: 20px;
+	text-align: center;
+	font-size: 17px;
+position: relative;
+top:40px;
+
+}
+
+.remove p
+{
+   padding-top: 15%;
+   padding-left: 17px;
+   color: black;
+}
+.remove:hover
+{
+	text-decoration: none;
+}
+
+.amount
+{
+	text-align: right;
+	position: relative;
+	top:-75px;
+	font-size: 20px;
+}
+
+
+.h1
+{
+	height: 1px;
+	color: black;
+	background-color: black;
+	
+}
+
+.total p
+{
+	font-size:30px;
+	font-family:gainsboro;
+}
+
+.tot-amt
+{
+	text-align: right;
+	font-size: 30px;
+}
+
+.upld button
+{
+    padding:15px;
+    width: 100%;
+    background-color: green;
+    color: white;
+
+}
+
+.upld button:hover
+{
+	background-color: black;
+	color: green;
+	transition: 0.5s;
+}
+
+.chk button
+{
+	 width: 100%;
+	 padding:15px;
+	 background-color: green;
+    color: white;
+
+}
+
+.chk button:hover
+{
+	background-color: black;
+	color: green;
+	transition: 0.5s;
+}
+
+.cont-sho
+{
+	text-align: center;
+	color: black;
+
+}
+.cont-sho:hover
+{
+	text-decoration: none;
+}
+
+.cont-sho p
+{
+	padding-top: 3%;
+}
+.sixth-cont
+{
+	padding-bottom: 2%;
+}
+
+
+@media(max-width: 600px)
+{
+	.chk-out{
+               padding-top: 3%;
+	}
+}
+
+
+@media(max-width: 991px)
+{
+	.chk-out{
+               padding-top: 3%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.link1 p 
+{
+    color: lightblue;
+}
+.link1 a
+{
+  color: grey;
+}
+
+.link2 p 
+{
+    color: lightblue;
+}
+.link2 a
+{
+  color: grey;
+}
+
+.link3 p 
+{
+    color: lightblue;
+}
+.link3 a
+{
+  color: grey;
+}
+
+.link4 p 
+{
+   color: lightblue;
+}
+.link4 a
+{
+  color: grey;
+}
+.link5 p
+{
+    color: lightblue;
+
+}
+.link5 h4
+{
+  color: lightblue;
+}
+.link5 h5
+{
+  color: silver;
+}
+
+.link1 a:hover 
+{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.link2 a:hover 
+{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.link3 a:hover 
+{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.link4 a:hover 
+{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+
+
+}
+.link5 i
+{
+  font-size: 30px;
+  position: relative;
+  top:15px;
+}
+.face
+{
+  position: relative;
+  color: blue;
+  border:1px solid blue;
+  padding:10px;
+  border-radius: 30px;
+  width: 50px;
+  text-align: center;
+}
+
+.twit
+{
+  position: relative;
+  color: skyblue;
+  border:1px solid skyblue;
+  padding:10px;
+  border-radius: 30px;
+  left: 10px;
+  
+
+} 
+.rss
+{
+  position: relative;
+  color: white;
+  border:1px solid white;
+  padding:10px;
+  border-radius: 30px;
+  left: 20px;
+  width: 50px;
+  text-align: center;
+  
+  
+}
+.face:hover
+{
+     background-color: blue;
+     color: white;
+     transition: 1s;
+     transform: rotateZ(360deg);
+}
+
+.twit:hover
+{
+     background-color: skyblue;
+     color: white;
+     transition: 1s;
+     transform: rotateZ(360deg);
+}
+
+.rss:hover
+{
+     
+     transition: 1s;
+     transform: rotateZ(360deg);
+}
+.footer
+{
+  background-color: grey;
+}
+.row14
+{
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+.row14 p
+{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: gainsboro;
+}
+.row14  a
+{
+    color: white;
+    font-family: gainsboro;
+}
+.row14 a:hover
+{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+
+}
+.thirteen
+{
+  background-color: black;
+}
+
+.link-cont
+{
+  background-color:black;
+   padding-top: 5%;
+    padding-bottom: 5%;"
+}
+  

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>amazon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="icon" href="/service/ve_assets/images/fav-icon.png">
+   <link rel="stylesheet" type="text/css" href="cart.css">
+  
+   <script type="text/javascript">
+   	function removeProduct(product_div_sku){
+   		$("#"+product_div_sku).remove();
+   		calculateTotal();
+   	}
+   	function updateProductPrice(input_sku,product_sku){
+   		$('#'+product_sku).html($('#'+input_sku).val());
+   		calculateTotal();
+   	}
+   	function calculateTotal(){
+   		var total = 0;
+   		
+   		$( "#products" ).children().each(function( i ) {
+   			if($(this).text().length !== 0){
+		     total+=parseInt($(this).find('.cfd').find('.amount').find('.amount_product').text());
+		    console.log(total);
+		    }
+		  });
+   		console.log(total);
+   		   		
+   		$('#total_amount').html(''+total);
+   		console.log($( "#products" ));
+   		$('#count-products').html("("+$( "#products" ).children().length+")");
+   	}
+   </script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse head">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        
+          <ul class="nav navbar-nav menu ">
+          <li class="#"><a href="#"><b>HOME</b></a></li>
+          <li class="#"><a href="#"><b>WISH LIST</b></a></li>
+          <li class="#"><a href="#"><b>MY ACCOUNT</b></a></li>
+          <li class="#"><a href="#"><b>SHOPPING CART</b></a></li>
+          <li class="#"><a href="#" class="checkout"><b>CHECKOUT</b></a></li>
+          
+          </ul>
+        
+          <ul class="nav navbar-nav navbar-right dollar-btn">
+           <button class="head-cart"><i class="fa fa-shopping-cart"></i></button>
+    
+
+          <div class="dropdown ">
+            <button class="dollar"><i class="fa fa-dollar"></i></button>
+    
+            <div class="dropdown-content">
+              <a href="#"><i class="fa fa-euro">EURO</i></a>
+              <a href="#"><i class="fa fa-yen">POUND STERLING</i></a>
+              <a href="#"><i class="fa fa-dollar">US DOLLAR</i></a>
+              
+             
+            </div>  
+          </div>
+          <div class="dropdown">
+            <button class="btn-En">En</button>
+    
+            <div class="dropdown-content">
+              <a href="#">EURO</a>
+              <a href="#">DEUTSCH</a>
+              <a href="#">PYCCKHH</a>
+              
+             
+            </div>  
+          </div>
+        </div>
+      </ul>
+       
+    </div>
+  </div>
+</nav>
+<div class="back1">
+  <div class="container">
+    <div class="row2">
+     
+        <div class="col-md-3 col-sm-6 col-xs-12">
+       
+        <a href="#"> <img src="logo.png" class="anti-logo"></a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 dial">
+      
+        <i class="fa fa-phone call"></i>
+        <p class="phone-num"><a href="#"> 543-6-76-2345-34</a></p>
+        
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6  icons">
+        <i class="fa fa-user"><a href="#"><b> CREATE AN ACCOUNT</b></a></i><br>
+        <i class="fa fa-lock"><a href="#"><b>LOGIN</b></a></i>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6  cart">
+        
+        <a href="#"><button class="btn-check">CHECKOUT</button></a>
+
+        </div>
+         
+      
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse inverse sticky">
+  <div class="container sticky">
+    <div class="navbar-header toogle">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar1">
+      <ul class="nav navbar-nav heading">
+        <li><a href="#">ANTIQUITIES</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle toggle" data-toggle="dropdown" href="#">ARMS & ARMOR <span class="caret"></span></a>
+          <ul class="dropdown-menu droper">
+            <a href="#">AENEAN VIVERRA</a>
+            <a href="#">PRAESENT IMPERDIET</a>
+            <a href="#">PRAESENT</a>
+          </ul>
+        </li>
+        <li><a href="#" >ARTS</a></li>
+        <li><a href="#">CLOCK</a></li>
+        <li><a href="#" >FURNITURE</a></li>
+          <li><a href="#" >JEWELERY</a></li>
+            <li><a href="#" >BOOKS</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+<div class="fourth">
+  <div class="container fourth-cont">
+    <div class="row4">
+      <div class="col-md-12 col-sm-12 col-xs-12 cart">
+        <p>Your Cart<span id="count-products"></span></p>
+      </div>
+      <div id="products">
+      	<div id="product_1_sku_main">
+	      <div class="col-md-5 col-sm-6 col-xs-12 line1">
+	        <div class="product">
+	          <a href="#"><img src="check.jpg" height="100" width="100"></a>
+	          <p><a href="#">RECTANGLE SHELL SUNGLASS E876</a></p>
+	        </div>
+	      </div>
+	      <div class="cfd col-md-5 col-md-offset-2 col-sm-6 col-xs-12 line1">
+	        <input id="product_1_sku_input" onchange="updateProductPrice.call(this,'product_1_sku_input','product_1_unique_sku')" type="number" name="prod1" placeholder="1" class="d-inline form-control form">
+	        <!-- add the sku of product div -->
+	        <a href="#" class="remove" onclick="removeProduct.call(this,'product_1_sku_main')"><p>Remove x</p></a>
+	        <div class="amount">
+	          <p class="amount_product" id="product_1_unique_sku">900</p>
+	        </div>
+	      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="hr1">
+
+<div class="fifth">
+  <div class="container fifth-cont">
+
+    <div class="row5">
+      <div class="col-md-3 col-sm-6 col-xs-6 total">
+        <p>Subtotal</p>
+      </div>
+      <div class="col-md-5 col-md-offset-4 col-sm-6 col-xs-6 amt">
+        <p id="total_amount" class="tot-amt"><b>990.00</b></p>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="sixth">
+  <div class="container sixth-cont">
+
+    <div class="row6">
+
+      <div class="col-md-4 col-sm-12 col-xs-12 up-desc">
+      
+        <a href="#" class="upld"><button class="btn">UPLOAD PRESCIPTION</button></a>
+       
+      </div>
+        
+      <div class="col-md-5 col-md-offset-3 col-sm-12 col-xs-12 chk-out">
+         <a href="#" class="chk"><button class="btn">CHECK OUT</button></a>
+         <a href="#" class="cont-sho"><p>Continue Shopping</p></a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="thirteen" >
+  <div class="container link-cont">
+    <div class="row13">
+      <div class="col-md-2 col-sm-6 col-xs-12 link1">
+      <p><b> INFORMATION</b></p>
+      <a href="#">About Us</a><br>
+      <a href="#">Delivery</a><br>
+      <a href="#">Privacy Policy</a><br>
+      <a href="#">Terms & Conditions</a>
+
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12 link2">
+      <p><b> CUSTOMER SERVICE</b></p>
+      <a href="#">Contact Us</a><br>
+      <a href="#">Returns</a><br>
+      <a href="#">Site Map</a>
+      
+
+      
+
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12 link3">
+      <p><b>  EXTRAS</b></p>
+      <a href="#">Brands</a><br>
+      <a href="#">Gift Vouchers</a><br>
+      <a href="#">Affiliates</a><br>
+      <a href="#">Specials</a><br>
+
+
+
+
+
+
+
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12 link4">
+      <p><b>MY ACCOUNT</b></p>
+      <a href="#">My Account</a><br>
+      <a href="#">Order History</a><br>
+      <a href="#">Wish List</a><br>
+      <a href="#">Newsletter</a>
+
+
+
+
+
+
+
+      </div>
+
+       <div class="col-md-4 col-sm-12 col-xs-12 link5">
+       <p>CONTACTS</p>
+       <h5>COMPANY INC., 8901 MARMORA ROAD, GLASGOW, D04 89GR</h5>
+       <h4>1-800-234-5677</h4>
+       <h4>1-800-234-6790</h4>
+       <a href="#"><i class="fa fa-facebook face"></a></i>
+       <a href="#"><i class="fa fa-twitter twit" ></a></i>
+       <a href="#"><i class="fa fa-rss rss"></a></i>
+
+      
+
+
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row14">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <p>Powered By <a href="#"> OpenCart</a> Antique © 2018</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script>
+updateProductPrice();
+</script>
+</html>
